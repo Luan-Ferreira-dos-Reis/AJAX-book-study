@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Fig. 2.1: main.html -->
+<!-- Primeiro exemplo de Xhtml. -->
+
+<html xmlns="http://www.w3.org/19999/xhtml">
+
+<head>
+    <title>More Forms</title>
+</head>
+
+<body>
+    <h1>Feedback form</h1>
+
+    <p>please fill out this form to help us improve our site</p>
+
+    <form method="post" action="">
+        <p>
+            <input type="hidden" name="recipient" value="deitel@deitel.com" />
+            <input type="hidden" name="subject" value="feedback form" />
+            <input type="hidden" name="redirect" value="main.html" />
+        </p>
+
+        <p>
+            <label> Name:
+                <input name="name" type="text" size="25" maxlength="30" />
+            </label>
+        </p>
+
+        <p>
+            <label>Comments:<br />
+                <textarea name="comments" rows="4" cols="36">Enter comments here</textarea>
+            </label>
+        </p>
+
+        <p>
+            <label for="">Email Address:
+                <input name="email" type="password" size="25" />
+            </label>
+        </p>
+
+        <p>
+            <strong>Things you liked:</strong><br>
+
+            <label for="">Site design
+                <input name="things liked" type="checkbox" value="Design" />
+            </label>
+            <label for="">Links
+                <input name="things liked" type="checkbox" value="Links" />
+            </label>
+            <label for="">Ease of use
+                <input name="things liked" type="checkbox" value="Ease" />
+            </label>
+            <label for="">Images
+                <input name="things liked" type="checkbox" value="Images" />
+            </label>
+            <label for="">Source Code
+                <input name="things liked" type="checkbox" value="Code" />
+            </label>
+        </p>
+
+        <p>
+            <label for="">Rate our site
+
+                <select name="rating">
+                    <option value="">10</option>
+                    <option value="">9</option>
+                    <option value="">8</option>
+                    <option value="">7</option>
+                    <option value="">6</option>
+                    <option value="">5</option>
+                    <option value="">4</option>
+                    <option value="">3</option>
+                    <option value="">2</option>
+                    <option value="">1</option>
+                    <option value="">0</option>
+                </select>
+
+            </label>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear" />
+        </p>
+
+
+    </form>
+
+</body>
+
+</html>
