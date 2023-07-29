@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Fig. 2.1: main.html -->
+<!-- Primeiro exemplo de Xhtml. -->
+
+<html xmlns="http://www.w3.org/19999/xhtml">
+
+<head>
+    <title>Relative positioning</title>
+
+    <style type="text/css">
+        p {
+            font-size: 1.3em;
+            font-family: verdana, Arial, Helvetica, sans-serif;
+        }
+
+        span {
+            color: red;
+            font-size: .6em;
+            height: 1em;
+        }
+
+        .super {
+            position: relative;
+            top: -1ex;
+        }
+
+        .sub {
+            position: relative;
+            top: -1ex;
+        }
+
+        .shiftleft {
+            position: relative;
+            top: -1ex;
+        }
+
+        .shiftright {
+            position: relative;
+            top: -1ex;
+        }
+    </style>
+</head>
+
+<body>
+    <p> The text at the end of this sentence
+        <span class="super">is in superscript.</span>
+    </p>
+    <p> The text at the end of this sentence
+        <span class="sub">is in superscript.</span>
+    </p>
+    <p> The text at the end of this sentence
+        <span class="shiftleft">is in superscript.</span>
+    </p>
+    <p> The text at the end of this sentence
+        <span class="shiftright">is in superscript.</span>
+    </p>
+
+    <a href="main.html"> main page </a> <br>
+
+</body>
+
+</html>
